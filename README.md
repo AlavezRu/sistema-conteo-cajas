@@ -42,6 +42,7 @@ Las historias de usuario están en [docs/historias_usuario.md](docs/historias_us
 │   ├── indicadores.py     LEDs y pantalla LCD
 │   └── cliente_http.py    envío de cada caja al servidor
 ├── tests/                 pruebas con pytest
+├── herramientas/          simulador del ESP32 para probar el firmware sin la tarjeta
 └── .github/workflows/     GitHub Actions corre las pruebas en cada push y pull request
 ```
 
@@ -85,3 +86,11 @@ pytest -v
 ```
 
 Se prueban la validación, el conteo, las rutas de la API y la lógica del firmware que no depende de la tarjeta (identificación del color y paso de la caja).
+
+Para probar el firmware completo sin la tarjeta, con el servidor corriendo:
+
+```bash
+python herramientas/simular_esp32.py 127.0.0.1 5000 <TOKEN_DISPOSITIVO del .env>
+```
+
+Simula el paso de cuatro cajas frente al sensor y las manda al servidor de verdad.
