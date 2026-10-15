@@ -14,7 +14,7 @@ Es la parte de software del proyecto **Clasificador de Cajas por Color** de Sist
 | Iteración | Fechas | Entregable | Estado |
 |---|---|---|---|
 | 1 | 28 sep – 2 oct | Repositorio, configuración segura y plan de entregas | `v0.1` |
-| 2 | 5 – 9 oct | Firmware del ESP32 contando cajas | `v0.2` (falta probar en la tarjeta) |
+| 2 | 5 – 9 oct | Firmware del ESP32 contando cajas | `v0.2` |
 | 3 | 12 – 16 oct | API de conteo validada con pruebas | En curso |
 | 4 | 19 – 23 oct | Cajas registradas en Google Sheets | Pendiente |
 | 5 | 26 – 30 oct | Interfaz web con inicio de sesión | Pendiente |
